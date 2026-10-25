@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сергей Сороковиков — портфолио и увлечения</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 1rem 3rem;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      padding: 2.5rem 1.5rem;
+      border-radius: 0 0 1.5rem 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border: 2px solid var(--primary);
+      border-radius: 999px;
+      transition: all 0.2s;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    section, article {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #dbeafe;
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      margin: 1.4rem 0 0.6rem;
+      font-size: 1.25rem;
+      color: #1e40af;
+    }
+
+    h4 {
+      margin: 1rem 0 0.4rem;
+      font-size: 1.05rem;
+      color: #334155;
+    }
+
+    p {
+      margin-bottom: 0.9rem;
+    }
+
+    ul, ol {
+      margin: 0.6rem 0 1rem 1.4rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    figure {
+      margin: 1.2rem 0;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    aside {
+      background: #eff6ff;
+      border-left: 5px solid var(--primary);
+      padding: 1rem 1.25rem;
+      margin: 1.2rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    time {
+      font-weight: 600;
+      color: #475569;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 600px) {
+      header {
+        padding: 2rem 1rem;
+      }
+      section, article {
+        padding: 1.25rem;
+      }
+      nav {
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Сергей Сороковиков</h1>
+    <p>Студент · Веб-разработка · Любитель технологий и походов</p>
+  </header>
+
+  <nav>
+    <a href="#about">О себе</a>
+    <a href="#skills">Навыки</a>
+    <a href="#hobbies">Увлечения</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <main>
+
+    <!-- Раздел 1 -->
+    <section id="about">
+      <h2>О себе</h2>
+      <p>Привет! Меня зовут Сергей. Я изучаю веб-разработку и сейчас осваиваю семантическую вёрстку на HTML5. Этот сайт — моя первая практическая работа.</p>
+
+      <article>
+        <h3>Образование и цели</h3>
+        <p>Сейчас я прохожу обучение по направлению веб-технологий. Моя цель — научиться создавать доступные, семантичные и адаптивные сайты.</p>
+
+        <h4>Ближайшие задачи</h4>
+        <ul>
+          <li>Полностью освоить HTML5 и CSS</li>
+          <li>Изучить Flexbox и Grid</li>
+          <li>Сделать несколько небольших проектов</li>
+          <li>Выложить портфолио на GitVerse / GitHub Pages</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Почему мне нравится веб</h3>
+        <p>Веб позволяет сразу видеть результат своей работы. Мне нравится, когда код превращается в красивую и понятную страницу.</p>
+        <aside>
+          <p><strong>Интересный факт:</strong> первая веб-страница в истории была создана Тимом Бернерсом-Ли в 1991 году и до сих пор доступна онлайн.</p>
+        </aside>
+      </article>
+    </section>
+
+    <!-- Раздел 2 -->
+    <section id="skills">
+      <h2>Навыки и инструменты</h2>
+
+      <article>
+        <h3>Технические навыки</h3>
+        <h4>Уже умею</h4>
+        <ul>
+          <li>HTML5 (семантические теги)</li>
+          <li>Базовый CSS (цвета, отступы, адаптивность)</li>
+          <li>Работа в VS Code + Live Server</li>
+          <li>Проверка кода через W3C Validator</li>
+        </ul>
+
+        <h4>Изучаю сейчас</h4>
+        <ol>
+          <li>Flexbox</li>
+          <li>Адаптивная вёрстка</li>
+          <li>Git и GitVerse / GitHub</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Инструменты, которые я использую</h3>
+        <ul>
+          <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a></li>
+          <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a></li>
+          <li>Live Server (расширение VS Code)</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Раздел 3 -->
+    <section id="hobbies">
+      <h2>Увлечения</h2>
+
+      <article>
+        <h3>Горы и походы</h3>
+        <p>В свободное время я люблю ходить в горы. Особенно нравятся маршруты средней сложности с красивыми видами.</p>
+
+        <figure>
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" 
+               alt="Горный пейзаж с острыми вершинами и облаками">
+          <figcaption>Один из любимых видов в горах</figcaption>
+        </figure>
+
+        <h4>Любимые направления</h4>
+        <ul>
+          <li>Кавказ</li>
+          <li>Алтай</li>
+          <li>Крымские горы</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Технологии и гаджеты</h3>
+        <p>Мне нравится разбираться в новых гаджетах и читать про современные технологии. Иногда собираю небольшие проекты на Arduino «для души».</p>
+      </article>
+    </section>
+
+    <!-- Раздел 4 (бонусный) -->
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Связаться со мной можно по электронной почте или через социальные сети.</p>
+      <address>
+        <p>Email: <a href="mailto:teyp890@mail.ru">teyp890@mail.ru</a></p>
+      <p>Страница создана: <time datetime="2026-10-25">25 октября 2026</time></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Сергей Сороковиков. Сделано с любовью к семантике и чистой вёрстке.</p>
+  </footer>
+
+</body>
+</html>
